@@ -15,7 +15,7 @@ type Review = {
 
 async function PropertyReviews({ propertyId }: { propertyId: string }) {
   const reviews = await fetchPropertyReviews(propertyId);
-  console.log(reviews);
+
   if (reviews.length < 1) return null;
   return (
     <div className="mt-8">

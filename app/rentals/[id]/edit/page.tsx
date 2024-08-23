@@ -18,7 +18,7 @@ import ImageInputContainer from "@/components/form/ImageInputContainer";
 
 const EditRentalpage = async ({ params }: { params: { id: string } }) => {
   const property = await fetchRentalDetails(params.id);
-  console.log(property);
+  
 
   if (!property) redirect("/");
 

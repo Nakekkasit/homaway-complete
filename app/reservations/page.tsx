@@ -16,7 +16,7 @@ import {
 
 const Reservationspage = async () => {
   const reservations = await fetchReservations();
-  console.log(reservations);
+  
   if (reservations.length === 0) return <EmptyList />;
   return (
     <div className="mt-16">
